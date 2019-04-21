@@ -1,15 +1,12 @@
 #include "worker.h"
 
 #include <QDebug>
+#include <QImage>
 #include <QtCore>
 
-Worker::Worker() {
-  qDebug() << "Worker created";
-}
+Worker::Worker() { qDebug() << "Worker created"; }
 
-Worker::~Worker() {
-  qDebug() << "Worker destroyed";
-}
+Worker::~Worker() { qDebug() << "Worker destroyed"; }
 
 void Worker::init() {
   bool status = true;

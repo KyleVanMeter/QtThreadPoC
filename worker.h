@@ -21,6 +21,7 @@ signals:
   void initialized(bool status);
   void started(bool status);
   void stopped(bool status);
+  void done();
   void dataGenerated(const QColor &data);
 
 private:

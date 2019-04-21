@@ -2,13 +2,12 @@
 #define APPMAIN_H
 
 #include <QDialog>
-#include <QObject>
 #include <QGraphicsView>
+#include <QObject>
 
 #include "controller.h"
 
-class AppMain : public QDialog
-{
+class AppMain : public QDialog {
   Q_OBJECT
 public:
   explicit AppMain(QWidget *parent = nullptr);
@@ -24,6 +23,11 @@ private:
   QGraphicsView *_view = nullptr;
   QGraphicsScene *_scene = nullptr;
   Controller _controller;
+
+  QImage *_image = nullptr;
+
+  int _x;
+  int _y;
 };
 
 #endif // APPMAIN_H

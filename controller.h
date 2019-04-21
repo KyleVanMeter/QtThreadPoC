@@ -5,8 +5,7 @@
 #include <QThread>
 #include <QTimer>
 
-class Controller : public QObject
-{
+class Controller : public QObject {
   Q_OBJECT
 public:
   Controller();
